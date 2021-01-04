@@ -24,6 +24,12 @@ HotelRoom::HotelRoom(const HotelRoom& object) {
     street = object.street;
 }
 
+void HotelRoom::where_home() {
+    std::cout << "Street " << street
+        << " home " << number_house
+        << " floor " << floor << std::endl;
+}
+
 HotelRoom::~HotelRoom() {
 
 }

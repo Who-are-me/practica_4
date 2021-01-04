@@ -27,6 +27,12 @@ House::House(const House& object) {
     street = object.street;
 }
 
+void House::where_home() {
+    std::cout << "Street " << street
+        << " home " << number_house
+        << " floor " << floor << std::endl;
+}
+
 House::~House() {
 
 }
