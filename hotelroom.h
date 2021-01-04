@@ -5,14 +5,8 @@
 
 #include "perenthome.h"
 
-class HotelRoom : PerentHome {
+class HotelRoom : public PerentHome {
 private:
-	int id;
-	int number_house;
-	int floor;
-	int count_room;
-	std::string street;
-
 	friend std::istream& operator >>(std::istream& in, HotelRoom& x);
 	friend std::ostream& operator <<(std::ostream& out, HotelRoom& x);
 	friend bool operator == (HotelRoom& l, HotelRoom& r);

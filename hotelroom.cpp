@@ -1,11 +1,7 @@
 #include "hotelroom.h"
 
 HotelRoom::HotelRoom() {
-    id = 0;
-    number_house = 0;
-    floor = 0;
-    count_room = 0;
-    street = "";
+    std::cin >> id >> number_house >> floor >> count_room >> street;
 }
 
 HotelRoom::HotelRoom(int id, int number_house, int floor, int count_room, std::string street) {

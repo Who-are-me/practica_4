@@ -1,12 +1,7 @@
 #include "house.h"
 
 House::House() {
-    id = 0;
-    number_house = 0;
-    square = 0;
-    floor = 0;
-    count_room = 0;
-    street = "";
+    std::cin >> id >> number_house >> square >> floor >> count_room >> street;
 }
 
 House::House(int id, int number_house, int square, int floor, int count_room, std::string street) {
