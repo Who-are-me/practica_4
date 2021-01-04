@@ -1,19 +1,19 @@
 #include "house.h"
+#include "hotelroom.h"
+#include "perenthome.h"
+
 #include <iostream>
 
 int main() {
-    House ob1, ob2, ob3;
+    House ob_house;
+    HotelRoom ob_hotelroom;
+    PerentHome ob_perenthome;
 
-    std::cin >> ob1 >> ob2 >> ob3;
+    std::cin >> ob_house;
+    std::cin >> ob_hotelroom;
+    std::cin >> ob_perenthome;
 
-    if (ob1 == ob2) {
-        std::cout << "\nob1 == ob2\n";
-    }
-    else {
-        std::cout << "\nob1 != ob2\n";
-    }
-
-    std::cout << ob1 << ob2 << ob3;
+    std::cout << ob_house << ob_hotelroom << ob_perenthome;
 
     return 0;
 }
